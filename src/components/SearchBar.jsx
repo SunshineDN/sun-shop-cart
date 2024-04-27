@@ -45,9 +45,7 @@ export const SearchBar = () => {
   return (
     <Form>
       <SearchInput
-        onChange={ ({ target }) =>{
-          setSearchValue(target.value);
-        }} />
+        onChange={ (e) => setSearchValue(e.target.value)} />
       {searchValue}
       <SearchButton>
         <IoIosSearch />

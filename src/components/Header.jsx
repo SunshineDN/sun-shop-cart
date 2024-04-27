@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { SearchBar } from './SearchBar';
-import { MdShoppingCart } from 'react-icons/md';
-
+import { CartButton } from './CartButton';
 const HeaderWrapper = styled.header`
   background-color: #fff159;
   position: fixed;
@@ -22,9 +21,7 @@ export const Header = () => {
     <HeaderWrapper>
       <HeaderContainer>
         <SearchBar />
-        <button>
-          <MdShoppingCart />
-        </button>
+        <CartButton />
       </HeaderContainer>
     </HeaderWrapper>
   );
